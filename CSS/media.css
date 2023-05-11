@@ -1,6 +1,50 @@
 @media (max-width: 1000px){
 }
 @media (max-width: 800px){
+    .container-menu{
+        width: 0;
+    }
+    .menu-container{
+		display: none;
+		flex-direction: column;
+		background-color: lightgray;
+		position: fixed;
+		top: 0;
+        right: 0;
+		width: 50%;
+		height: 100%;
+		text-align: left;
+		z-index: 2;
+		transition: all 1s;
+	}
+    #checked-menu:checked ~ .menu-container{
+		display: block;
+		max-height: 100%;
+		animation: men .5s ease-in-out;
+	}
+	label{
+		display: block;
+		position: absolute;
+        right: -40px;
+        top: 15px;
+		padding: 10px 0;
+		z-index: 3;
+	}
+	#checked-menu:checked ~ label .burger-line{
+		background-color: transparent;
+	}
+	#checked-menu:checked ~ label .burger-line::before{
+		transform: rotate(-45deg);
+		width: 30px;
+		top: 0;
+	}
+	#checked-menu:checked ~ label .burger-line::after{
+		transform: rotate(45deg);
+		top: 0;
+	}
+    .bt-git{
+        margin: 5%;
+    }
 }
 @media (max-width: 650px){
 }
