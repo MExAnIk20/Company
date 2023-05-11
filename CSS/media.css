@@ -3,6 +3,10 @@
 @media (max-width: 800px){
     .container-menu{
         width: 0;
+        position: relative;
+    }
+    .container-content{
+        margin: 3%;
     }
     .menu-container{
 		display: none;
@@ -14,7 +18,7 @@
 		width: 50%;
 		height: 100%;
 		text-align: left;
-		z-index: 2;
+		z-index: 10;
 		transition: all 1s;
 	}
     #checked-menu:checked ~ .menu-container{
@@ -25,8 +29,8 @@
 	label{
 		display: block;
 		position: absolute;
-        right: -40px;
-        top: 15px;
+        right: -55px;
+        top: -3px;
 		padding: 10px 0;
 		z-index: 3;
 	}
@@ -44,6 +48,9 @@
 	}
     .bt-git{
         margin: 5%;
+    }
+    h3{
+        margin-left: 40px;
     }
 }
 @media (max-width: 650px){

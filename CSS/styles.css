@@ -3,6 +3,9 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, th, td, hea
     padding: 0;
     font-family: Arial;
 }
+body{
+    background-color: #eaeaea;
+}
 ul, ol{
     list-style-type: none;
 }
@@ -42,10 +45,10 @@ label{
     transition: all .3s;
 }
 .burger-line::before{
-    top: 8px;
+    top: 7px;
 }
 .burger-line::after{
-    top: -8px;
+    top: -7px;
 }
 .container-menu{
     position: fixed;
@@ -56,16 +59,16 @@ label{
 }
 .box-gray{
     background-color: #f6f6f6;
-    box-shadow: 1px 1px 5px gray;
+    box-shadow: 2px 2px 5px gray;
 }
 .bt-git{
     display: block;
     font-weight: bold;
     font-size: 19px;
     margin: 10%;
+    color: #000;
 }
 hr{
-    margin-top: 15px;
     border: none;
     border: 1px solid #e3e3e3;
 }
@@ -86,4 +89,80 @@ hr{
 .menu li a{
     display: block;
     padding: 5%;
+}
+/* Блок контента*/
+.container-content{
+    margin: 15px 2% 15px 19%;
+}
+h3{
+    font-size: 19px;
+}
+.First-row{
+    display: flex;
+    margin-top: 4%;
+    gap: 2%;
+}
+.First-row .box-gray::before{
+    font-size: 24px;
+    padding: 5%;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+.First-row .first-box{
+    width: 24%;
+    position: relative;
+    padding: 1%;
+}
+.First-row .first-box hr{
+    margin: 4% 0;
+}
+.First-row .first-box a{
+    font-size: 14px;
+}
+.First-row .first-box a::before{
+    margin-right: 2%;
+}
+.first-box ul{
+    text-align: right;
+}
+.first-box ul li:nth-child(1){
+    color: gray;
+    font-size: 14px;
+}
+.first-box ul li:nth-child(2){
+    font-size: 26px;
+}
+.Second-row{
+    margin-top: 4%;
+    display: flex;
+    gap: 2%;
+}
+.Second-row div:nth-child(1)::before{
+    background-color: #448b00;
+}
+.Second-row div:nth-child(2)::before{
+    background-color: #d89e24;
+}
+.Second-row div:nth-child(3)::before{
+    background-color: #274d97;
+}
+.Second-row .Second-box{
+    width: 33%;
+    position: relative;
+    padding: 1%;
+}
+.Second-row .Second-box::before{
+    position: relative;
+    top: -15px;
+    left: 10px;
+    font-size: 100px;
+    font-size: calc(80px + (158 - 80) * ((100vw - 1000px) / (1600 - 1000)));
+    padding: 7%;
+}
+.Second-row .Second-box hr{
+    margin: 5% 0;
+}
+.Second-row .Second-box a::before{
+    margin-right: 2%;
 }

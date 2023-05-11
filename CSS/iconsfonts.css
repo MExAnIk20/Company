@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('../fonts/icons.ttf?42igwx') format('truetype'),
-    url('../fonts/icons.woff?42igwx') format('woff'),
-    url('../fonts/icons.svg?42igwx#icons') format('svg');
+    url('../fonts/icons.ttf?rhfqlm') format('truetype'),
+    url('../fonts/icons.woff?rhfqlm') format('woff'),
+    url('../fonts/icons.svg?rhfqlm#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -47,18 +47,22 @@
 }
 .icon-data:before {
   content: "\e905";
+  background-color: #448b00;
   color: #f5f5f5;
 }
 .icon-shop:before {
   content: "\e906";
+  background-color: #d89e24;
   color: #f5f5f5;
 }
 .icon-tag:before {
   content: "\e907";
+  background-color: #274d97;
   color: #f5f5f5;
 }
 .icon-paperplane:before {
   content: "\e908";
+  background-color: #c32056;
   color: #f5f5f5;
 }
 .icon-graphics:before {
@@ -82,4 +86,20 @@
 }
 .icon-square-regular:before {
   content: "\e90e";
+}
+.icon-alert:before {
+  content: "\e90f";
+  color: #000;
+}
+.icon-calendar:before {
+  content: "\e910";
+  color: #000;
+}
+.icon-down:before {
+  content: "\e911";
+  color: #000;
+}
+.icon-time:before {
+  content: "\e912";
+  color: #000;
 }
