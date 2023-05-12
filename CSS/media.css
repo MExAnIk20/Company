@@ -26,23 +26,23 @@
 		max-height: 100%;
 		animation: men .5s ease-in-out;
 	}
-	label{
+	#check-mnu{
 		display: block;
 		position: absolute;
         right: -55px;
-        top: -3px;
+        top: -1px;
 		padding: 10px 0;
 		z-index: 3;
 	}
-	#checked-menu:checked ~ label .burger-line{
+	#checked-menu:checked ~ #check-mnu .burger-line{
 		background-color: transparent;
 	}
-	#checked-menu:checked ~ label .burger-line::before{
+	#checked-menu:checked ~ #check-mnu .burger-line::before{
 		transform: rotate(-45deg);
 		width: 30px;
 		top: 0;
 	}
-	#checked-menu:checked ~ label .burger-line::after{
+	#checked-menu:checked ~ #check-mnu .burger-line::after{
 		transform: rotate(45deg);
 		top: 0;
 	}
