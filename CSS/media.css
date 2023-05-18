@@ -1,4 +1,29 @@
 @media (max-width: 1000px){
+	.First-row {
+		margin-top: 5%;
+		gap: 0;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 40px;
+	}
+	.First-row .first-box {
+		position: relative;
+		flex-basis: 49%;
+		box-sizing: border-box;
+	}
+	.Second-row{
+		margin-top: 7%;
+	}
+	.Third-row{
+		flex-wrap: wrap;
+	}
+	.Third-row .Third-box{
+		margin-top: 4%;
+		flex-basis: 100%;
+	}
+	.Third-row .Third-box:nth-child(2){
+		margin-top: 8%;
+	}
 }
 @media (max-width: 800px){
     .container-menu{
@@ -20,6 +45,9 @@
 		text-align: left;
 		z-index: 10;
 		transition: all 1s;
+	}
+	.menu{
+		margin: 0;
 	}
     #checked-menu:checked ~ .menu-container{
 		display: block;
@@ -50,10 +78,45 @@
         margin: 5%;
     }
     h3{
-        margin-left: 40px;
+        margin-left: 45px;
     }
 }
 @media (max-width: 650px){
+	.Second-row {
+		gap: 0%;
+		flex-wrap: wrap;
+		margin-top: 10%;
+		row-gap: 50px;
+	}
+	.Second-row .Second-box {
+		width: 0%;
+		position: relative;
+		padding-top: 170px;
+		flex-basis: 100%;
+		box-sizing: border-box;
+	}
+	.Third-row{
+		margin-bottom: 10%;
+	}
+	.Second-row div:nth-child(1) p:nth-child(1), .Second-row div:nth-child(2) p:nth-child(1), .Second-row div:nth-child(3) p:nth-child(1){
+		background-size: 65%;
+	}
+	.Second-row div p:nth-child(1){
+		left: 2.9%;
+    	width: 94%;
+	}
+	footer{
+		margin: 5% 0;
+	}
 }
 @media (max-width: 500px){
+	.First-row{
+		margin-top: 7%;
+	}
+	.First-row .first-box{
+		flex-basis: 100%;
+	}
+	.First-row .box-gray::before{
+		padding: 4%;
+	}
 }

@@ -106,21 +106,23 @@ h3{
     font-size: 24px;
     padding: 5%;
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: -10px;
 }
 .First-row .first-box{
     width: 24%;
     position: relative;
-    padding: 1%;
+    padding: 15px;
 }
 .First-row .first-box hr{
-    margin: 4% 0;
+    margin: 15px 0;
 }
-.First-row .first-box a{
-    font-size: 14px;
+.First-row .first-box p{
+    font-size: 12px;
+    color: gray;
+    padding: 5px 0;
 }
-.First-row .first-box a::before{
+.First-row .first-box p::before{
     margin-right: 2%;
 }
 .first-box ul{
@@ -128,35 +130,65 @@ h3{
 }
 .first-box ul li:nth-child(1){
     color: gray;
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 .first-box ul li:nth-child(2){
-    font-size: 26px;
+    font-size: 22px;
 }
 .Second-row{
     margin-top: 4%;
     display: flex;
     gap: 2%;
 }
-.Second-row div:nth-child(1)::before{
+.Second-row div p:nth-child(1){
+    position: absolute;
+    top: -15px;
+    left: 5%;
+    width: 90%;
+    height: 140%;
+    max-height: 170px;
+}
+.Second-row div:nth-child(1) p:nth-child(1), .Second-row div:nth-child(2) p:nth-child(1), .Second-row div:nth-child(3) p:nth-child(1){
+    background-image: url(../img/graphics.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.Second-row div:nth-child(1) p:nth-child(1){
     background-color: #448b00;
 }
-.Second-row div:nth-child(2)::before{
+.Second-row div:nth-child(2) p:nth-child(1){
     background-color: #d89e24;
 }
-.Second-row div:nth-child(3)::before{
+.Second-row div:nth-child(3) p:nth-child(1){
     background-color: #274d97;
+}
+.Second-box ul li:nth-child(2){
+    font-size: 13px;
 }
 .Second-row .Second-box{
     width: 33%;
-    padding: 1%;
+    padding: 15px;
+    position: relative;
+    padding-top: 170px;
 }
-.Second-row .Second-box::before{
-    font-size: calc(95px + (158 - 95) * ((100vw - 1000px) / (1600 - 1000)));
-    padding: 7%;
+.Second-row .Second-box ul{
+    color: gray;
+}
+.Second-row .Second-box p{
+    color: gray;
+}
+.Second-row .Second-box p:nth-child(4){
+    font-size: 12px;
+    padding: 0 0 5px 0;
+}
+.Second-row .Second-box p::before{
+    color: gray;
+    margin-right: 2%;
 }
 .Second-row .Second-box hr{
-    margin: 5% 0;
+    margin: 15px 0;
 }
 .Second-row .Second-box a::before{
     margin-right: 2%;
@@ -169,7 +201,7 @@ h3{
 }
 .Third-row .Third-box{
     width: 49%;
-    padding: 1%;
+    padding: 15px;
 }
 .header-box-1{
     display: flex;
@@ -190,21 +222,31 @@ h3{
 }
 .header-box-1 ul li a{
     color: #fff;
-    padding: 10%;
+    padding: 10px 10px;
+}
+.header-box-1 ul li a::before{
+    margin-right: 10px;
 }
 .header-box-1 ul li a:hover{
     background-color: #dead49;
 }
-.header-box-1 ul li a::before{
-    margin-right: 10%;
+.header-box-2 ol li:nth-child(1){
+    margin-bottom: 2%;
+}
+.header-box-2 ol li:nth-child(2){
+    font-size: 12px;
 }
 .grid-box{
     display: grid;
-    grid-template-columns: 5% 80% 5% 5%;
+    grid-template-columns: 5% 82% 5% 5%;
     grid-auto-rows: auto;
     margin: 2% 0;
     gap: 1%;
     color: gray;
+    align-items: center;
+}
+.grid-box label{
+    font-size: 14px;
 }
 .grid-box img{
     width: 16px;
@@ -234,12 +276,20 @@ footer{
     display: flex;
     margin: 2% 0;
 }
+footer span{
+    color: gray;
+    font-size: 14px;
+}
 footer ul{
     display: flex;
     flex: 1;
 }
 footer ul li:nth-child(1){
     margin-left: 1%;
+}
+footer ul li a{
+    font-size: 12px;
+    font-weight: bold;
 }
 footer ul li{
     margin-right: 2%;
